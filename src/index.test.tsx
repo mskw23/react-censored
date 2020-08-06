@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import { ReactCensored } from '.'
 
-describe('ExampleComponent', () => {
+describe('ReactCensored', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(ReactCensored).toBeTruthy()
   })
 })

@@ -1,10 +1,18 @@
 import React from 'react'
+import { ReactCensored } from 'react-censored'
 
-import { ExampleComponent } from 'react-censored'
-import 'react-censored/dist/index.css'
-
-const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+const ParagraphWithCensor = () => {
+  return (
+    <main>
+      <h1>
+        React
+        <ReactCensored className='lorem' blur={8} color='hotpink'>
+          Censored
+        </ReactCensored>{' '}
+        👀
+      </h1>
+    </main>
+  )
 }
 
-export default App
+export default ParagraphWithCensor
